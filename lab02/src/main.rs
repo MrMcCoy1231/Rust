@@ -8,6 +8,8 @@ fn add_chars_n(mut s : String, c : char, mut nr : i32 ) ->String
         nr-=1;
     }
 
+    
+
     s
 
 }
