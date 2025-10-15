@@ -1,4 +1,4 @@
-target/
 debug/
+target/
 *.pdb
 **/*.rs.bk
