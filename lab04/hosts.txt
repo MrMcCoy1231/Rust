@@ -1,0 +1,17 @@
+# Fișier hosts de exemplu
+# Format: IP followed by domeniu
+
+127.0.0.1 localhost
+127.0.1.1 mypc.localdomain mypc
+
+# Înregistrări IPv6 standard
+::1 ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+
+# Domenii personalizate
+0.0.0.0 facebook.com
+0.0.0.0 ads.doubleclick.net
+192.168.1.10 server.local
