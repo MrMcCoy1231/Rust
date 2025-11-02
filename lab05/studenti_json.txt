@@ -1,0 +1,4 @@
+{"nume":"Constantin","telefon":"0711111111","varsta":21}
+{"nume":"Mihai","telefon":"0722222222","varsta":23}
+{"nume":"Elena","telefon":"0733333333","varsta":25}
+{"nume":"Diana","telefon":"0744444444","varsta":20}
