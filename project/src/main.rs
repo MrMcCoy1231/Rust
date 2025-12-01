@@ -5,18 +5,17 @@ use std::error::Error;
 
 fn main() -> Result<(), Box<dyn Error>> {
 
+    //ca sa pot pune comenda help in linie comanda
     let args: Vec<String> = std::env::args().collect();
     if args.len() > 1 {
         match args[1].as_str() {
             "--help" | "-h" | "help" => {
-                println!("=== HANGMAN ===");
-                println!("  hangman = joc interactiv");
-                println!("  hangman --help | -h | help = afiseaza asta");
+                show_help();
                 return Ok(());
             }
             _ => {
                 println!("Comanda necunoscuta: {}", args[1]);
-                println!("Foloseste 'hangman --help' pentru ajutor");
+                println!("Foloseste '--help' pentru ajutor");
                 return Ok(());
             }
         }
@@ -42,6 +41,7 @@ fn main() -> Result<(), Box<dyn Error>> {
             continue;
         }
         
+        //aici porneste jocul
         if let Err(e) = hangman() {
             eprintln!("Eroare joc: {}", e);
         }

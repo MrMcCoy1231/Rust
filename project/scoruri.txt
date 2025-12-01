@@ -17,3 +17,8 @@ sport volei 0 CASTIG
 sport tenis 4 PIERDERE
 sport baschet 0 CASTIG
 animale maimuta 2 CASTIG
+animale elefant 0 CASTIG
+fructe caisa 1 CASTIG
+sport fotbal 0 CASTIG
+sport baschet 1 CASTIG
+fructe piersica 0 CASTIG
