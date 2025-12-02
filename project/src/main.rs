@@ -104,6 +104,14 @@ fn hangman() -> Result<(), Box<dyn Error>> {
         }
         println!();
         println!("Gresite: {}", gresite);
+        if gresite != 0{
+            if secret.len()/2+2 -gresite ==1{
+                println!("Mai poti gresi inca o data");
+            }
+            else {
+                println!("Mai poti gresi inca {} ori", secret.len() / 2 + 2 - gresite);
+            }
+        }
         print!("Litera?: ");
         io::stdout().flush()?;
         

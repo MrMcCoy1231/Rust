@@ -22,3 +22,6 @@ fructe caisa 1 CASTIG
 sport fotbal 0 CASTIG
 sport baschet 1 CASTIG
 fructe piersica 0 CASTIG
+animale caine 0 CASTIG
+sport tenis 4 PIERDERE
+sport fotbal 4 CASTIG
