@@ -95,7 +95,7 @@ fn hangman() -> Result<(), Box<dyn Error>> {
     let mut gresite = 0;
     let mut incercate = [' '; 26];
     
-    println!("\nAm ales un cuvant cu {} litere!", secret.len());
+    println!("\nAm ales un cuvant cu {} litere! Poti face maxim {} greseli.", secret.len(),secret.len());
     
     loop {
         print!("Cuvant: ");
@@ -105,11 +105,11 @@ fn hangman() -> Result<(), Box<dyn Error>> {
         println!();
         println!("Gresite: {}", gresite);
         if gresite != 0{
-            if secret.len()/2+2 -gresite ==1{
+            if secret.len() -gresite ==1{
                 println!("Mai poti gresi inca o data");
             }
             else {
-                println!("Mai poti gresi inca {} ori", secret.len() / 2 + 2 - gresite);
+                println!("Mai poti gresi inca {} ori", secret.len() - gresite);
             }
         }
         print!("Litera?: ");
@@ -166,7 +166,7 @@ fn hangman() -> Result<(), Box<dyn Error>> {
             return Ok(());
         }
         
-        let max_greseli = secret.len() / 2 + 2;
+        let max_greseli = secret.len();
         if gresite >= max_greseli {
             println!("💀 PIERDERE! Cuvantul era: {}", secret);
             println!("Greseli: {}", gresite);

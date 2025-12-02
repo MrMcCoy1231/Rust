@@ -25,3 +25,5 @@ fructe piersica 0 CASTIG
 animale caine 0 CASTIG
 sport tenis 4 PIERDERE
 sport fotbal 4 CASTIG
+sport volei 4 CASTIG
+fructe pruna 3 CASTIG

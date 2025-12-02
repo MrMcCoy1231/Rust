@@ -2,3 +2,5 @@ fotbal
 baschet
 tenis
 volei
+ski
+karate
