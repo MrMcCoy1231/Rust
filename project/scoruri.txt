@@ -27,3 +27,8 @@ sport tenis 4 PIERDERE
 sport fotbal 4 CASTIG
 sport volei 4 CASTIG
 fructe pruna 3 CASTIG
+sport fotbal 0 CASTIG
+sport fotbal 0 CASTIG
+sport karate 5 CASTIG
+animale pisica 2 CASTIG
+sport fotbal 0 CASTIG

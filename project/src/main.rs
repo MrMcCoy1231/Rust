@@ -75,18 +75,21 @@ fn hangman() -> Result<(), Box<dyn Error>> {
     println!("\n=== HANGMAN ===");
     println!("Ce categorie? (sport/animale/fructe) sau 'exit': ");
     
+    //citesc categoria
     let categorie = read_line()?;
     if categorie == "exit" {
         println!("Ai iesit din jocul curent!");
         return Ok(());
     }
     
+    //aici citesc cuvinte din fisier
     let cuvinte = read_words(&categorie)?;
     if cuvinte.is_empty() {
         println!("Niciun cuvant in {}!", categorie);
         return Ok(());
     }
     
+    //aleg cuvantul random
     let mut rng = rand::thread_rng();
     let index_random = rng.gen_range(0..cuvinte.len());
     let secret = cuvinte[index_random].clone();
@@ -97,6 +100,7 @@ fn hangman() -> Result<(), Box<dyn Error>> {
     
     println!("\nAm ales un cuvant cu {} litere! Poti face maxim {} greseli.", secret.len(),secret.len());
     
+    //aici incep loopul 
     loop {
         print!("Cuvant: ");
         for &lit in &afisat {
